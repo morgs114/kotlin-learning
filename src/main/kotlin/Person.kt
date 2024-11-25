@@ -1,10 +1,10 @@
-class Person(firstName: String, lastName: String, age: Int, nickname: String? = null) {
-    val firstName: String = firstName
-    val lastName: String = lastName
-    val age: Int = age
-    val nickname: String? = nickname // nickname optional
+class Person(
+    val firstName: String,
+    val lastName: String,
+    val age: Int,
+    val nickname: String? = null // optional parameter
+) {
 
-    // initialiser block
     init {
         println("Successfully added a new person: $firstName $lastName.")
     }
